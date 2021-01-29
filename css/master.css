@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 10px;
+}
+
+.clearfix {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* debug */
+.debug .row [class*="col-"] {
+  height: 152px;
+  border: 1px solid black;
+  background-color: #eeb0d9;
+  float: left;
+}
+
+.row .col-6.special {
+  padding: 3px;
+}
+.row .col-6.special [class*="col-"] {
+  border: 1px solid white;
+  background-color: #ed92ab;
+}
+
+.row {
+  width: 100%;
+  text-align: center;
+  line-height: 152px;
+}
